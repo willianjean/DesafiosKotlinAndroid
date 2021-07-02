@@ -1,4 +1,39 @@
 /*
+import java.util.Scanner;
+
+fun main(args: Array<String>) {
+   //continue o codigo
+    val leitor = Scanner(System.`in`);
+    val H: Int = leitor.nextInt();
+    val P: Double = leitor.nextDouble();
+    
+    val media: Double = H / P;
+    println(String.format("%.2f", media));
+}
+
+
+
+
+
+
+import java.util.Scanner;
+
+fun main(args: Array<String>) {
+    val leitor = Scanner(System.`in`);
+    //continue o código
+    val x: Int = leitor.nextInt();
+    val y: Double = leitor.nextDouble();
+
+    val media: Double = x/y
+
+
+
+    println(String.format("%.3f km/l", media));
+}
+
+
+
+
 import java.util.Scanner
 
 fun main (){
