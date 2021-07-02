@@ -286,5 +286,74 @@ fun main (args: Array<String>) {
 }
 
 
+
+
+fun main(args: Array<String>) {
+    
+    val valor = readLine()!!.toInt()
+    
+    for (i in 1.rangeTo(valor).step(1)) 
+      if(i % 2 == 0)
+        println(i) // insira o valor correto
+}
+
+
+
+
+fun main(args: Array<String>) {
+
+    val v = readLine()!!.toInt()
+    val a = IntArray(10).toMutableList()
+    
+    a[0] = v
+
+    for (i in 1.until(10)) { a[i] = a[i-1] * 2 }
+    for (k in 0.until(10)) { println("N[$k] = ${a[k]}") }
+}
+
+
+
+
+
+
+fun main(args: Array<String>) {
+    
+    val list = IntArray(10) { readLine()!!.toInt() }
+    for (x in 0.until(10)) { if (list[x]<1 || list[x]==null) list[x] = 1 }
+    for (i in 0.until(10)) println("X[$i] = ${list[i]}")
+    
+}
+
+
+
+
+
+fun main(args: Array<String>) {
+    
+    val C = readLine()!!.toInt()
+    var sum = 0.0
+    val T = readLine()!!.toUpperCase()
+    val M = Array(12) { DoubleArray(12)}
+
+    for (i in 0.until(12)) {
+        for (j in 0.until(12)) {
+            M[i][j] = readLine()!!.toDouble()
+        }
+    }
+    for (k in 0.until(M.size)) {
+        sum += M[k][C]
+    }
+    if (T.equals("M")) {
+        sum /= M.size
+        println(sum.format(1))
+    }else
+        println(sum.format(1))
+
+}
+
+private fun Double.format(digits: Int) = "%.${digits}f"
+    .format(this).replace(',','.')
+    
+
 */
 
